@@ -1,153 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
-body {
-    font-family: "Nunito", sans-serif;
-    font-size: large;
-    color: #e3e3e3;
-    background-color: #131313;
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin: 0;
-    padding: 0;
+
+body{
+    background-color: #1b1d17;
+    color: #DDF1F0;
 }
-
-#title {
-    text-align: left;
-    left: 20px;
-    position: relative;
-    margin-top: 20px;
+b {
+    color: #5896c9;
 }
-
-.top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header {
+    margin-left: 18px;
 }
-
-.nav {
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-    gap: 12px;
-    margin-right: 20px;
+.HelloWorld{
+    color: #5896c9;
+    font-family: "PT Mono", monospace;
+    font-weight: 1000;
+    letter-spacing: 4px;
 }
-
-.nav img{
-    width: 40px;
-    height: 40px;
+.print {
+    color: #DDF1F0;
 }
-
-.form {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; /* Centraliza o formulário */
-    align-items: center;
-}
-
-#content {
-    opacity: 0;
-}
-
-/* Estilos dos Conteúdos */
-.card-tags {
-    margin-top: 10px;
-    font-size: medium;
-    color: #9e9e9e;
-}
-
-.card-banner {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-.card-date {
-    position: relative;
+.descr{
+    font-family: "PT Mono", serif;
     font-size: 20px;
-    text-align: right;
-    opacity: 0.9;
-    right: 20px;
+    margin-top: -18px;
+    letter-spacing: 1px;
 }
 
-.card-body {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    margin: 20px auto;
-    padding: 16px;
-    width: 100%;
-    max-width: 70%;
-    cursor: pointer;
+.card-tags, .tags{
+    color: #4d71a8;
+    font-weight: bold;
+    font-family: "PT Mono", serif;
+    letter-spacing: 1px;
 }
 
-.card-title {
-    margin-top: -23px;
-    font-weight: 700;
-    color: #f5f5f5;
-}
-
-.card-text {
-    color: #cfcfcf;
-    margin-top: 10px;
-}
-
-.card-line {
-    border-color: #555;
-    margin: 15px 0;
-}
-
+/* Layout principal da .content */
 .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.card-text {
-    text-align: left;
-    font-size: larger;
-    color: #ececec;
+.card-preview {
+    border: solid 3px #DDF1F0;
+    color: #DDF1F0;
+    background-color:#181a16;
+    font-family: "PT Mono", serif;
+    text-align: center;
+    padding: 15px 30px;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
-.up-btn {
-    display: flex;
-    justify-content: flex-end;
+.card-preview .card-tags {
+    font-size: large;
+    margin-bottom: 10px;
 }
 
-.up-btn img {
-    width: 50px;
-}
-
-.up-btn img:hover {
-    background-color: #2e2d2d;
-    border-radius: 50%;
-}
-
-b {
-    color: #f3bc44;
-}
-
-.center {
+.card-descr {
+    font-size: large;
     text-align: center;
 }
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .top {
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .content {
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
     }
 
-    .nav {
-        justify-content: center;
-        margin: 10px 0;
+    .card-preview {
+        max-width: 100%;  /* O card ocupa toda a largura do contêiner */
+        padding: 20px;
     }
 
-    .card-body {
-        width: 90%;
-    }
-
-    .card-title {
-        font-size: 1.2em;
-    }
-
-    .card-text {
-        font-size: 1em;
+    .card-preview .card-tags, .card-descr {
+        font-size: medium;
     }
 }
+
+@media (max-width: 480px) {
+    .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-preview {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .card-preview .card-tags, .card-descr {
+        font-size: small;
+    }
+}
+
+.article{
+    padding: 25px;
+    background-color:#181a16;
+    font-family: "Quicksand", sans-serif;
+    font-size: 22   px;
+    letter-spacing: 1px;
+}
+.title{
+    font-size: 40px;
+}
+.tags{
+    font-size: x-large;
+    margin-top: -28px;
+}
+.content{
+    font-size: larger;
+}
+.a_withstyle{
+    color:#4d79b9;
+    text-decoration:underline;
+}
+
