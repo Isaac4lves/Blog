@@ -35,7 +35,7 @@
                 const item = data[id];
                 document.title = item.alt;  
                 
-                contentContainer.appendChild(createCard("view", item.title, item.tags, item.descricao, id, item.content, item.banner));
+                contentContainer.appendChild(createCard("view", item.title, item.tags, item.descricao, id, item.content));
             } else {
                 contentContainer.innerHTML = "<p>Postagem não encontrada.</p>";
             }

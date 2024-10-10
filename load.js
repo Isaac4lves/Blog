@@ -1,7 +1,7 @@
 import { data } from './src/data.js';
 
 // Função que cria cards com base no método
-export function createCard(metod, title, tags, desc, id, content = '', image = '') {
+export function createCard(metod, title, tags, desc, id, content = '') {
     let card = document.createElement("div");
 
     // Card de pré-visualização ("load")
