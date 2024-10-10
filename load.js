@@ -1,13 +1,11 @@
 import { data } from './src/data.js';
 
-// Função que cria cards com base no método
 export function createCard(metod, title, tags, desc, id, content = '') {
     let card = document.createElement("div");
 
-    // Card de pré-visualização ("load")
     if (metod === "load") {
         card.innerHTML = `
-        <a href='./template.html?id=${id}' target="_blank">
+        <a href='./postagem.html?id=${id}' target="_blank">
             <div class="card-preview" style="cursor: pointer;">
                 <div class="card-tags">${tags}</div>
                 <h1 class="card-title">${title}</h1>
@@ -18,7 +16,6 @@ export function createCard(metod, title, tags, desc, id, content = '') {
         return card;
     }
 
-    // Card de visualização completa ("view")
     else {
         card.innerHTML = `
         <div class="article" style="cursor: pointer;">
@@ -31,7 +28,6 @@ export function createCard(metod, title, tags, desc, id, content = '') {
     }
 }
 
-// Carregando os cards de pré-visualização para o index
 let contentContainer = document.querySelector(".content");
 for (let key in data) {
     if (data.hasOwnProperty(key)) {

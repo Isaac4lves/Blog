@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postagem</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Postagem</title> 
 </head>
-<style>
-    .post {
-        display: none;
-    }
-</style>
 <body>
-    <div class="senha">
-        <input type="text">
-        <button class="send">Mandar</button>
-    </div>
-    <div class="post">
-        <p>Banner: </p><input class="banner" type="text">
-        <p>Titulo: </p><input class="titulo" type="text">
-        <p>Alt: </p><input class="alt" type="text">
-        <p>Descrição: </p><input class="descricao" type="text">
-        <p>Data: </p><input class="data" type="text">
-        <p>Tags: </p><input class="tags" type="text">
-        <p>Content: </p><input class="content" type="text">
-        <button class="postar">Postar</button>
-    </div>
+    <div class="header">
+    <a  href="index.html" >
+        <h1 class="titulo"> 
+            <p class="HelloWorld"> HELLOWORLD(<p1 class="print">print</p1>); </p>
+        </h1>
+    </a> </div>
+    <div class="content"></div>
 
-    <script>
-        function post(titulo, alt, banner, descricao, data, tags, content) {
-            const novaPostagem = {
-                title: `<b><h4>${titulo}</h4></b>`,
-                alt: alt,
-                banner: banner,
-                descricao: descricao,
-                date: data,
-                tags: tags,
-                content: content
-            };
+    <script type="module">
+        import { data } from './src/data.js';
+        import { createCard } from './load.js';
+        
+        // Função para obter o parâmetro "id" da URL
+        function getId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
         }
-        document.querySelector(".send").addEventListener("click", function () {
-            const senha = document.querySelector("input").value;
-            if (senha === "abc") {
-                document.querySelector(".senha").style.display = "none";
-                document.querySelector(".post").style.display = "block";
-            }
-        });
 
-        document.querySelector(".postar").addEventListener("click", function () {
-            const titulo = document.querySelector(".titulo").value;
-            const banner = document.querySelector(".banner").value;
-            const alt = document.querySelector(".alt").value;
-            const descricao = document.querySelector(".descricao").value;
-            const data = document.querySelector(".data").value;
-            const tags = document.querySelector(".tags").value;
-            const content = document.querySelector(".content").value;
-            post(titulo, alt, banner, descricao, data, tags, content);
-        });
+        function displayPostagem() {
+            const id = getId();
+            const contentContainer = document.querySelector(".content");
+
+            contentContainer.innerHTML = '';
+
+            if (id && data[id]) {
+                const item = data[id];
+                document.title = item.alt;  
+                
+                contentContainer.appendChild(createCard("view", item.title, item.tags, item.descricao, id, item.content));
+            } else {
+                contentContainer.innerHTML = "<p>Postagem não encontrada.</p>";
+            }
+        }
+
+        window.onload = displayPostagem;
     </script>
 </body>
 </html>
