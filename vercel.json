@@ -1,6 +1,8 @@
 {
   "rewrites": [
-    { "source": "/postagem", "destination": "/page/postagem.html" },
-    { "source": "/postagem/:id", "destination": "/page/postagem.html" }
+    {
+      "source": "/postagem",
+      "destination": "/page/postagem.html"
+    }
   ]
 }
