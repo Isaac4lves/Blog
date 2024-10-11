@@ -5,7 +5,7 @@ export function createCard(metod, type, title, tags, desc, id, content = '') {
 
     if (metod === "load") {
         card.innerHTML = `
-        <a href='./postagem.html?id=${id}' target="_blank">
+        <a href='./template.html?id=${id}' target="_blank">
             <div class="card-preview" id="${type}" style="cursor: pointer;">
                 <div class="card-tags">${tags}</div>
                 <h1 class="card-title">${title}</h1>
