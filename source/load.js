@@ -1,4 +1,4 @@
-import { data } from './src/data.js';
+import { data } from './data.js';
 
 export function createCard(metod, type, title, tags, desc, id, content = '') {
     let card = document.createElement("div");
