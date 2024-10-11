@@ -78,7 +78,7 @@ p1 {
     text-align: center;
 }
 
-#offtopic b, #offtopic .card-tags, #offtopic .tags {
+#offtopic b, .card-preview#offtopic .card-tags, .card-preview#offtopic .tags {
     color: #FD9720;
 }
 .card-preview#offtopic {
