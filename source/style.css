@@ -14,15 +14,23 @@ b {
     margin-left: 18px;
 }
 
+
 .HelloWorld {
+    display: flex;
     color: #5896c9;
     font-family: "PT Mono", monospace;
     font-weight: 1000;
     letter-spacing: 4px;
+    margin-right: 120px;
 }
 
 p1 {
+    display: flex;
     color: #DDF1F0;
+}
+p2 {
+    display: flex;
+    color: #FD9720;
 }
 
 .descr {
@@ -39,7 +47,6 @@ p1 {
     letter-spacing: 1px;
 }
 
-/* Layout principal da .content */
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -56,10 +63,10 @@ p1 {
     font-family: "PT Mono", serif;
     text-align: center;
     padding: 15px 30px;
-    width: 300px;
+    width: 100%;
     max-width: 300px;
-    min-width: 300px;
-    min-height: auto;
+    flex-grow: 1;
+    min-height: 350px;
     box-sizing: border-box;
     transition: transform 0.2s ease-in-out;
 }
@@ -68,19 +75,25 @@ p1 {
     transform: scale(1.05);
 }
 
-.card-preview .card-tags {
-    font-size: large;
-    margin-bottom: 10px;
+.card-preview:hover .HelloWorld {
+    font-size: 12px;
 }
 
 .card-descr {
     font-size: large;
     text-align: center;
+    align-items: last baseline;
 }
 
-#offtopic b, .card-preview#offtopic .card-tags, .card-preview#offtopic .tags {
+.card-preview .card-tags {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+#offtopic b, .card-preview#offtopic .card-tags, #offtopic .tags {
     color: #FD9720;
 }
+
 .card-preview#offtopic {
     border: solid 3px  #d47f1d;
 }
@@ -90,7 +103,6 @@ a {
     text-decoration: none;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -98,7 +110,7 @@ a {
     }
 
     .card-preview {
-        max-width: 100%;  /* O card ocupa toda a largura do contêiner */
+        max-width: 100%;
         padding: 20px;
     }
 
@@ -126,7 +138,7 @@ a {
         padding: 10px 15px;
     }
 }
-/* Responsividade para 412x915 */
+
 @media (max-width: 412px) and (max-height: 915px) {
     .content {
         flex-direction: column;
@@ -190,6 +202,9 @@ a {
 
 .title {
     font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .tags {

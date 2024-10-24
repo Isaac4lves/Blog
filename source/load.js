@@ -35,3 +35,4 @@ for (let key in data) {
         contentContainer.appendChild(createCard("load",item.type, item.title, item.tags, item.descricao, key));
     }
 }
+
