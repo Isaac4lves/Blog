@@ -5,23 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/source/style.css">
-    <title>HelloWorld(print)</title>
+    <title>IsaacAndrade</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
 
 <body>
-    <script type="module" src="/source/load.js"></script>
+    <script type="module" src="/source/load.js"></script> <!-- carregar as postagens -->
+    <script type="module" src="/source/main.js"></script> <!-- linka o arquivo javascript principal -->
+
+
     <div class="header">
         <a href="index.html">
-            <h1 class="titulo">
-                <p class="HelloWorld"> HELLO <p2 id="offtopic"> WORLD </p2>(<p1 class="print">print</p1>)<p1>;</p1>
-                </p>
-            </h1>
+            <h1 class="titulo">Isaac <b> Andrade</b> </h1>
         </a>
-        <p class="descr">Um blog para guardar quaisquer descobertas e aprendizados sobre tecnologia. Se por algum motivo
-            questionavel você quiser me contatar (porque você faria isso?) <a href="https://github.com/Isaac4lves"
-                target="_blank"> <b>aqui</b> </a> está meu GitHub ;)</p>
+        <p class="descr">
+            Um blog para guardar quaisquer descobertas e aprendizados sobre tecnologia que eu tiver ao longo da minha
+            jornada como aspirante a programador. <br>
+            Email para contato: <b>isaacandrade.dev@gmail.com</b> <br>
+
     </div>
     <hr>
+    <div class="search">
+        <select class="select">
+            <option id="geral" value="#Geral">Geral</option>
+            <option id="devlog" value="#Devlog">Devlog</option>
+            <option id="evento" value="#Evento">Evento</option>
+            <option id="offtopic" value="#Offtopic">Offtopic</option>
+        </select>
+        <button class="search-btn">
+            <span class="material-symbols-outlined">search</span>
+        </button>
+    </div>
+    </br>
+
     <div class="content"></div>
 </body>
 
