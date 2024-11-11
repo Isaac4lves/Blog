@@ -5,7 +5,7 @@ export function createCard(metod, type, title, tags, desc, id, date, content = '
 
     if (metod === "load") { // cria uma preview da postagem se *metod="load" 
         card.innerHTML = `
-        <a href='../page/postagem.html?id=${id}' target="_blank">
+        <a href='../page/postagem.html?id=${id}'>
             <div class="card-preview" id="${type}" style="cursor: pointer;">
                 <div class="card-tags">${tags}</div>
                 <h1 class="card-title">${title}</h1>
@@ -18,7 +18,7 @@ export function createCard(metod, type, title, tags, desc, id, date, content = '
     }
     if (metod == "ById"){
         card.innerHTML = `
-        <a href='../page/postagem.html?id=${id}' target="_blank">
+        <a href='../page/postagem.html?id=${id}'>
             <div class="card-preview" id="${type}" style="cursor: pointer;">
                 <div class="card-tags">${tags}</div>
                 <h1 class="card-title">${title}</h1>
@@ -46,12 +46,14 @@ export function createCard(metod, type, title, tags, desc, id, date, content = '
 let contentContainer = document.querySelector(".content"); // Acessa o .content lá da página inicial
 
 export function iteringData(metod, tag){
+
     if (metod == "all"){ // se o *metod for all, ele busca todos as postagens no documento
         contentContainer.innerHTML = "";
-
         for (let key in data) { // percorre toda a data (importada no inicio deste arquivo)  
+
             if (data.hasOwnProperty(key)) { // verifica se *data tem a *key da vez
                 let item = data[key];
+                console.log("a");
                 contentContainer.appendChild(createCard("load",item.type, item.title, item.tags, item.descricao, key, item.date)); // cria um card para esta postagem
             }
             // se não houver a key buscada, se encerra.
@@ -59,10 +61,10 @@ export function iteringData(metod, tag){
 
     }
 
-    if (metod == "byTag"){ // se o *metod for byId, ele busca uma esquecifica
+    else if (metod == "byTag"){ // se o *metod for byId, ele busca uma esquecifica
+        contentContainer.innerHTML = "";
 
         let i = 0;
-        contentContainer.innerHTML = "";
 
         for (let key in data) { // percorre toda a data (importada no inicio deste arquivo)  
             i += 1; // variavel que contabiliza quantas postagens existem 
