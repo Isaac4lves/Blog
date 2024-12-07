@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "3.0.0",
   "description": "A simple personal blog made by myself.",
+  "type": "module",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Isaac4lves/Blog/issues"
   },
-  "homepage": "https://github.com/Isaac4lves/Blog#readme"
+  "homepage": "https://github.com/Isaac4lves/Blog#readme",
+  "dependencies": {
+    "marked": "^15.0.3"
+  }
 }
