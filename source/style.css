@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #1b1d17;
@@ -7,8 +12,33 @@ body {
 }
 
 /* define uma cor padrão para o negrito(bold) */
-b { 
-    color: #5896c9;
+strong, b { 
+    color: #5896c9
+}
+
+code {
+    background-color: #272923;
+    font-family:"Ubuntu Sans Mono", serif;
+}
+code.language-html{
+    background-color: #33302b;
+}
+code.language-bash{
+    background-color: #2d352c;
+}
+code:hover {
+    font-weight: 480;
+}
+
+h3:hover::before {
+    content: "## ";
+    color: #DDF1F0;
+    opacity: 0.4;
+}
+h4:hover::before {
+    content: "# ";
+    color: #DDF1F0;
+    opacity: 0.4;
 }
 
 .header {
@@ -49,7 +79,7 @@ b {
     height: 30px;
     margin-left: 15px;
 }
-.select #offtopic{
+.select #Offtopic{
     color: #FD9720;
 }
 .select #devlog, #evento{
@@ -117,97 +147,99 @@ b {
     margin-bottom: 10px;
 }
 
-/* define uma cor diferente na borda e no negrito do elemento que estiver o id #offtopic */
-#offtopic b, .card-preview#offtopic .card-tags, #offtopic .tags {
+/* define uma cor diferente na borda e no negrito do elemento que estiver o id #Offtopic */
+#Offtopic b, .card-preview#Offtopic .card-tags, #Offtopic .tags {
     color: #FD9720;
 }
 
-.card-preview#offtopic {
+.card-preview#Offtopic {
     border: solid 3px #d47f1d;
+}
+
+.article#Offtopic{
+    strong{
+        color: #d47f1d;
+    }
 }
 
 /* tira a formatação do <a> para não ter mais um visual de link */
 a {
-    color: black;
+    color: #DDF1F0;
     text-decoration: none;
 }
-
+em {
+    color: #2596be;
+}
 /* responsividade */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        gap: 15px;
     }
     .card-preview {
-        max-width: 100%;
-        padding: 20px;
+        max-width: 90%;
+        padding: 15px;
+        min-height: 320px;
     }
     .card-preview .card-tags, .card-descr {
         font-size: medium;
     }
-    
+    img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .content {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 10px;
     }
     .card-preview {
-        max-width: 100%;
-        padding: 15px;
-    }
-    .card-preview .card-tags, .card-descr {
-        font-size: small;
-    }
-    .card-preview {
+        max-width: 95%;
         padding: 10px 15px;
+        min-height: 300px;
     }
-   
+    .titulo {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .descr {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+    img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 412px) and (max-height: 915px) {
     .content {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        padding: 10px;
+        gap: 8px;
+        padding: 5px;
     }
     .card-preview {
-        max-width: 100%;
-        padding: 10px 15px;
+        max-width: 95%;
+        padding: 8px 10px;
         font-size: small;
         border-width: 2px;
+        min-height: 280px;
     }
     .titulo {
-        font-size: 20px;
-        letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
     .descr {
-        font-size: 16px;
-        margin-top: -10px;
+        font-size: 12px;
+        margin-top: -5px;
     }
-    .article {
-        padding: 20px;
-        font-size: 5px;
-        letter-spacing: 0.5px;
+    img {
+        width: 100%;
     }
-    .title {
-        font-size: 20px;
-    }
-    .tags {
-        font-size: medium;
-        margin-top: -20px;
-    }
-    .header {
-        margin-left: 10px;
-    }
-    .a_withstyle {
-        font-size: small;
-    }
-  
 }
-
 .article {
     padding: 25px;
     background-color: #181a16;
