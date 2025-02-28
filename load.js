@@ -2,7 +2,7 @@
 import { data } from './postagens/summary.js';
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
-let totaldepostagens = 4 + 1;
+let totaldepostagens = 3 + 1;
 
 export function converter(txt, div) {
     return marked.parse(txt);
