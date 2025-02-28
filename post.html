@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/article-style.css">
+    <link rel="stylesheet" href="./styles/main-style.css">
+    <title>Carregando...</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="dont-show"> <h1><orange>Isaac</orange><blue>Andrade</blue></h1> </a>
+    </header>
+
+    <div class="container"></div> 
+
+    <script type="module">
+        import { data } from "/postagens/summary.js";
+        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+
+        const params = new URLSearchParams(document.location.search);
+        const fileName = params.get("t"); 
+        const contentContainer = document.querySelector(".container");
+
+        if (!fileName) {
+            document.title = "Erro - Sem arquivo";
+            contentContainer.innerHTML = "<p>Erro: Nenhum arquivo fornecido.</p>";
+        } else {
+            let item = Object.values(data).find(post => post.file === fileName);
+
+            if (!item) {
+                document.title = "Erro - Postagem não encontrada";
+                contentContainer.innerHTML = "<p>Erro: Postagem não encontrada.</p>";
+            } else {
+                document.title = item.title;
+
+                fetch(`./postagens/${item.file}.md`)
+                    .then((res) => res.text())
+                    .then((text) => {
+                        const htmlContent = marked.parse(text); 
+                        contentContainer.innerHTML = `
+                            <article class="article">
+                                <p class="date">${item.date}</p>
+                                <h1 class="title">${item.title}</h1>
+                                <div class="tags">${item.tags}</div>
+                                <div class="content">${htmlContent}</div>
+                            </article>
+                        `;
+                    })
+                    .catch((e) => {
+                        console.error("Erro ao carregar o arquivo:", e);
+                        contentContainer.innerHTML = "<p>Erro ao carregar a postagem.</p>";
+                    });
+            }
+        }
+    </script>
+</body>
+</html>

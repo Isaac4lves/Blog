@@ -1,27 +1,12 @@
 {
   "name": "blog",
-  "version": "3.0.0",
-  "description": "A simple personal blog made by myself.",
-  "type": "module",
-  "main": "index.html",
+  "version": "2.0.0",
+  "description": "Blog pessoal para o @isaac4lves",
+  "type":"module",
+  "main": "load.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Isaac4lves/Blog.git"
-  },
-  "keywords": [
-    "blog",
-    "tech"
-  ],
   "author": "Isaac Andrade",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Isaac4lves/Blog/issues"
-  },
-  "homepage": "https://github.com/Isaac4lves/Blog#readme",
-  "dependencies": {
-    "marked": "^15.0.3"
-  }
+  "license": "ISC"
 }

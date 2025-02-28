@@ -2,32 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #1b1d17;
     color: #DDF1F0;
+    margin: 30px;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.6; /* Melhora a legibilidade */
 }
 
-/* define uma cor padrão para o negrito(bold) */
+/* Negrito (strong) */
 strong, b { 
-    color: #5896c9
+    color: #5896c9;
 }
 
+/* Código */
 code {
     background-color: #272923;
-    font-family:"Ubuntu Sans Mono", serif;
+    font-family: "Ubuntu Sans Mono", serif;
+    padding: 5px;
+    border-radius: 5px;
 }
-code.language-html{
+code.language-html {
     background-color: #33302b;
 }
-code.language-bash{
+code.language-bash {
     background-color: #2d352c;
 }
 code:hover {
-    font-weight: 480;
+    font-weight: 600;
+}
+
+/* Cabeçalhos */
+h3, h4 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
 }
 
 h3:hover::before {
@@ -35,33 +49,32 @@ h3:hover::before {
     color: #DDF1F0;
     opacity: 0.4;
 }
+
 h4:hover::before {
     content: "# ";
     color: #DDF1F0;
     opacity: 0.4;
 }
 
-.header {
-    margin-left: 18px;
-}
-
+/* Títulos e descrições */
 .titulo {
     display: flex;
     font-family: "PT Mono", monospace;
     color: #FD9720;
-    font-weight: 1000;
+    font-weight: 700;
     letter-spacing: 4px;
     margin-right: 120px;
 }
 
 .descr {
     font-family: "PT Mono", serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-top: -18px;
     letter-spacing: 1px;
+    color: #DDF1F0;
 }
 
-/* configuração das cores da tag do preview e da tag do *postagem.html  */
+/* Tags */
 .card-tags, .tags {
     color: #4d71a8;
     font-weight: bold;
@@ -69,6 +82,7 @@ h4:hover::before {
     letter-spacing: 1px;
 }
 
+/* Select */
 .select {
     background-color: #1b1d17;
     font-family: "PT Mono", monospace;
@@ -76,29 +90,23 @@ h4:hover::before {
     letter-spacing: 1px;
     font-size: 15px;
     width: 200px;
-    height: 30px;
+    height: 40px;
+    border: 1px solid #4d71a8;
+    border-radius: 5px;
     margin-left: 15px;
-}
-.select #Offtopic{
-    color: #FD9720;
-}
-.select #devlog, #evento{
-    color: #4d71a8;
-}
-.select #geral{
-    color:#DDF1F0
-}
-.search button{
-    position: relative;
-    top: 7px;
-    width: 30px;
-    height: 30px;
-}
-.search button span{
-    align-self: center;
+    transition: all 0.2s ease-in-out;
 }
 
-/* configura a div .content, onde os previews aparecem */
+.select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #4d71a8;
+}
+
+.select option {
+    color: #DDF1F0;
+}
+
+/* Cards */
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -114,40 +122,44 @@ h4:hover::before {
     background-color: #181a16;
     font-family: "PT Mono", serif;
     text-align: center;
-    padding: 15px 20px;
+    padding: 20px;
     width: 100%;
     max-width: 300px;
     flex-grow: 1;
     min-height: 350px;
     box-sizing: border-box;
-    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .card-preview:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .card-preview:hover .titulo {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .card-date {
-    opacity: 0.5;
-    justify-content: baseline;
+    opacity: 0.6;
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
 
 .card-descr {
-    font-size: large;
+    font-size: 1.1rem;
     text-align: center;
-    align-items: last baseline;
+    margin-top: 10px;
 }
 
+/* Estilo das tags no card */
 .card-preview .card-tags {
-    font-size: large;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
-/* define uma cor diferente na borda e no negrito do elemento que estiver o id #Offtopic */
+/* Offtopic */
 #Offtopic b, .card-preview#Offtopic .card-tags, #Offtopic .tags {
     color: #FD9720;
 }
@@ -156,21 +168,21 @@ h4:hover::before {
     border: solid 3px #d47f1d;
 }
 
-.article#Offtopic{
-    strong{
-        color: #d47f1d;
-    }
-}
-
-/* tira a formatação do <a> para não ter mais um visual de link */
+/* Links */
 a {
     color: #DDF1F0;
     text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
 em {
     color: #2596be;
 }
-/* responsividade */
+
+/* Responsividade */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -240,23 +252,27 @@ em {
         width: 100%;
     }
 }
+
+/* Estilo do artigo */
 .article {
     padding: 25px;
     background-color: #181a16;
     font-family: "Quicksand", sans-serif;
     font-size: 22px;
     letter-spacing: 1px;
+    line-height: 1.8;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .tags {
-    font-size: x-large;
+    font-size: 1.5rem;
     margin-top: -28px;
 }
 
@@ -264,3 +280,4 @@ em {
     color: #4d79b9;
     text-decoration: underline;
 }
+

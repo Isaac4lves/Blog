@@ -1,40 +1,8 @@
-# Isaac Andrade blog
-A simple blog to share knowledgement about tech, and especially coding. I made this site with HTML, JavaScript and CSS, all vanilla (for now). 
+# Blog Pessoal
+Olá, tudo bem? Meu nome é **Isaac**, sou estudante do Ensino Médio, e desde três anos atrás comecei a estudar sobre programação. Desde então, sempre tive o desejo de criar um *blog pessoal* para poder escrever sobre coisas que estou aprendendo, documentar conquistas.
 
-I want to use my site to explore more about web development, and while i change as a dev, my blog will change too. If you are interessed about the versions, [there is a timeline](#time-line).
+E em **setembro de 2024**, decidi finalmente colocar em prática esse projeto. Sem saber como eu ia fazer isso, fui codando e de pouco em pouco o blog, fazendo ele da forma que julguei fazer sentido. O resultado me surpreendeu *positivamente* e decidi então que este seria um projeto que de tempos em tempos eu "refatoraria".
 
-# Time-Line
-1° Version
+Esta é a **versão 2.0** do blog; fique à vontade para explorar o conteúdo e acompanhar meus singelos textos.
 
-![v1](./source/images/first-version.png)
-
-My first idea is do a site to post some articles about everything, and i would use my pseudonym "Mandragóra", but quickly i changed my mind LOL
-
-2° Version
-![v2](./source/images/second-version.png)
-![v2](./source/images/second-version2.png)
-
-Seen this second version you can look how horrible i am when we talk about design. Here i decided to put just "articles" about coding. This name "helloworld(print);" was hilarious, to me...
-
-3° Version (actual)
-![v3](./source/images/third-version.png)
-I put my own name, and now the code is documented, and have a tag search feature# Isaac Andrade blog
-A simple blog to share knowledgement about tech, and especially coding. I made this site with HTML, JavaScript and CSS, all vanilla (for now). 
-
-I want to use my site to explore more about web development, and while i change as a dev, my blog will change too. If you are interessed about the versions, [there is a timeline](#time-line).
-
-# Time-Line
-1° Version
-![v1](./source/images/first-version.png)
-
-My first idea is do a site to post some articles about everything, and i would use my pseudonym "Mandragóra", but quickly i changed my mind LOL
-
-2° Version
-![v2](./source/images/second-version.png)
-![v2](./source/images/second-version2.png)
-
-Seen this second version you can look how horrible i am when we talk about design. Here i decided to put just "articles" about coding. This name "helloworld(print);" was hilarious, to me...
-
-3° Version (actual)
-![v3](./source/images/third-version.png)
-I put my own name, and now the code is documented, and have a tag search feature.
+Link: [https://isaacandrade.vercel.app/](https://isaacandrade.vercel.app/)
