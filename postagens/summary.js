@@ -1,9 +1,9 @@
 export const data = { // a lista está em ordem do mais recente para o mais antigo
     "4": {
-        "title":"DevLog #3: INTERPRETADOR MARKDOWN",
-        "file":"devlog03-interpretador-markdown",
-        "descricao":"Finalmente fiz o que já deveria estar feito!!",
-        "date":"05/12/2024",
+        "title":"DevLog #3: RESSURGINDO DAS CINZAS",
+        "file":"devlog03-ressurgindo-das-cinzas",
+        "descricao":"Refiz o site inteiro em menos de uma noite.",
+        "date":"28/2/2025",
         "tags":"#Devlog",
         "type":"Ontopic"
     },
@@ -27,7 +27,7 @@ export const data = { // a lista está em ordem do mais recente para o mais anti
         "title": "DevLog #1: DESCOBRINDO O FOGO.",
         "file": "devlog01-descobrindo-o-fogo",
         "descricao": "Estou tal qual um peixe fora da água!",
-        "date": "09/10/2024",
+        "date": "9/10/2024",
         "tags": "#Devlog",
         "type": "Ontopic"
     }
