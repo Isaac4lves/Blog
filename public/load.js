@@ -1,4 +1,4 @@
-import { data } from '../postagens/summary.js';
+import { data } from './postagens/summary.js';
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
 let totaldepostagens = 4 + 1;
@@ -46,7 +46,7 @@ export function createCard(method, type, title, tag, desc, id, date ) {
         <div class="article" id="${type}" style="cursor: pointer;">
             <p class="date">${date}</p>
             <h1 class="title"> <b><h4>${title}</h4></b> </h1>
-            <div class="tags">${tag}</div>
+            <div class="tags">${tags}</div>
             <p class="content">${content}</p>
         </div>
         `;
