@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "2.0.0",
   "description": "Blog pessoal para o @isaac4lves",
-  "type":"module",
+  "type": "module",
   "main": "load.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
