@@ -10,6 +10,6 @@ Nesses meses, muitas coisas mudaram: meu conhecimento avançou, eu fiquei mais v
 
 ## O QUE MUDOU?
 
-Praticamente nada. Além de deixar o código mais tranquilo e leve, organizei a pasta do projeto da forma que achei mais adequada. KKKK. Me recomendaram ler Código Limpo e disseram que seria um bom norte para mim. Porém, ainda tenho 2 livros na frente, mas dentro deste semestre começo a leitura (se tudo der certo).
+Praticamente nada. Além de deixar o código mais tranquilo e leve, organizei a pasta do projeto da forma que achei mais adequada KKKK. Me recomendaram ler "Código Limpo" e disseram que seria um bom norte para mim, mas como eu ainda não li, me dou o livre arbítrio de improvisar.
 
 Ainda estou desempregado, mas agora estou no 3° ano do Ensino Médio. Continuo meio burro, mas agora estudo com frequência sobre algoritmos e estruturas de dados usando Java, além de matemática no meu tempo livre. E imagino que este ano será o ano da escrita.
