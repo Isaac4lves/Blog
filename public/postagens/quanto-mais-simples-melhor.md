@@ -1,7 +1,5 @@
 ---
 
-<br>
-
 **Antiquário** (do latim antiquarius, aquele que gosta de antiguidades) pode designar tanto um entusiasta, admirador ou comerciante de coisas antigas.
 
 Vivemos em uma era digital e polarizada, onde ideias estúpidas se espalham sem filtro. Antissemitismo mascarado de "piada", grupos neonazistas e arrogância intelectual são comuns na internet brasileira e mundial. O problema? Qualquer um pode falar qualquer coisa, e *opiniões ignorantes se multiplicam*.
