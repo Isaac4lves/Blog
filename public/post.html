@@ -43,9 +43,9 @@
                         contentContainer.innerHTML = `
                             <article class="article">
                                 <p class="date">${item.date}</p>
-                                <h1 class="title">${item.title}</h1>
-                                <div class="tags">${item.tags}</div>
-                                <div class="content">${htmlContent}</div>
+                                <h1 class="title" id="${item.type}">${item.title}</h1>
+                                <div class="tags" id="${item.type}">${item.tags}</div>
+                                <div class="content" id="${item.type}">${htmlContent}</div>
                             </article>
                         `;
                     })
