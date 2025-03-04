@@ -30,7 +30,7 @@ hr {
     margin: 20px;
 }
 
-.title#Offtopic, .tags#Offtopic {
+.title#Offtopic, .tags#Offtopic, .content#Offtopic b {
     color: #FD9720;
 }
 
