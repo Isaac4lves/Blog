@@ -26,6 +26,10 @@ body {
     padding: 20px;
 }
 
+hr {
+    margin: 20px;
+}
+
 /* Media query para desktop */
 @media (min-width: 1024px) {
     body {
