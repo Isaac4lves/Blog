@@ -1,4 +1,12 @@
 export const data = { // a lista está em ordem do mais recente para o mais antigo
+    "5": {
+        "title":"QUANTO MAIS SIMPLES MELHOR",
+        "file":"quanto-mais-simples-melhor",
+        "descricao":"Gente ignorante me faz querer voltar a ser embrião.",
+        "date":"4/3/2025",
+        "tags":"#Reflexivo",
+        "type":"Offtopic"
+    },
     "4": {
         "title":"DevLog #3: RESSURGINDO DAS CINZAS",
         "file":"devlog03-ressurgindo-das-cinzas",
