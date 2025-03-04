@@ -1,4 +1,3 @@
-.
 ---
 
 **Antiquário** (do latim antiquarius, aquele que gosta de antiguidades) pode designar tanto um entusiasta, admirador ou comerciante de coisas antigas.
