@@ -1,3 +1,4 @@
+
 ---
 
 &emsp;Sempre quis fazer um blog para servir como um repositório para meus textos, então fiz este espaço aqui onde você está. Aqui começa meu devlog de número um sobre meu site, e desde já fica o adendo: **NUNCA FIZ NADA TÃO GRANDE QUANTO ESTE SITE**, então naturalmente vou cometer mais erros que acertos. Por conta do novo ensino médio, tenho quase nenhum tempo para estudar, então decidi fazer este espaço e ir atualizando ele com coisas que aprendi tanto para melhorar o site quanto para evoluir como 'programador', se assim posso me autonomear.

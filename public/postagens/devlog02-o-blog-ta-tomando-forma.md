@@ -1,3 +1,4 @@
+
 ---
 
 &emsp;Bem, por onde eu poderia começar. Desde o [**Identidade IFTO**](postagem.html?id=3) eu venho ficando novamente imerso no mundo dev. Eu tinha parado de assistir e ler coisas sobre o mundo tech porque tinha desanimado. Desde o Identidade IFTO, eu venho me sentindo menos só nessa jornada e mais obstinado em atingir um patamar que eu me orgulhe.
