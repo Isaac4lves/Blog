@@ -30,6 +30,10 @@ hr {
     margin: 20px;
 }
 
+.title#Offtopic, .tags#Offtopic {
+    color: #FD9720;
+}
+
 /* Media query para desktop */
 @media (min-width: 1024px) {
     body {
